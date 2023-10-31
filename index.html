@@ -1,24 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="title" content="Galaxy" />
-    <meta name="description" content="A stunning web proxy with support for many popular sites." />
-    <meta name="language" content="English" />
-    <meta name="author" content="Nebelung" />
-    <meta name="theme-color" content="#26233a" />
-    <meta property="og:title" content="Galaxy" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/logo.png" />
-    <meta property="og:description" content="A stunning web proxy with support for many popular sites." />
-    <script src="/ultra/ultra.bundle.js" defer></script>
-    <script src="/ultra/ultra.config.js" defer></script>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+<html>
+<head>
+<title>Chrome Lookalike</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
 
-    <script src="/src/index.jsx" type="module"></script>
-  </body>
+<div id="browser-container">
+
+  <div id="title-bar">
+    <img src="chrome-logo.png" alt="Chrome logo">
+    <input type="text" id="search-bar" placeholder="Search the web or enter a URL">
+    <button id="search-button" type="button"><img src="search-icon.png" alt="Search icon"></button>
+    <button id="theme-button" type="button"><img src="theme-icon.png" alt="Theme icon"></button>
+    <button id="bookmark-button" type="button"><img src="bookmark-icon.png" alt="Bookmark icon"></button>
+  </div>
+
+  <div id="bookmarks-bar">
+    <button id="bookmark-1" type="button"><img src="bookmark-1.png" alt="Bookmark 1"></button>
+    <button id="bookmark-2" type="button"><img src="bookmark-2.png" alt="Bookmark 2"></button>
+    <button id="bookmark-3" type="button"><img src="bookmark-3.png" alt="Bookmark 3"></button>
+    ...
+    <button id="bookmark-10" type="button"><img src="bookmark-10.png" alt="Bookmark 10"></button>
+  </div>
+
+  <div id="tab-bar">
+    <ul>
+      <li class="active"><a href="#">Tab 1</a></li>
+      <li><a href="#">Tab 2</a></li>
+      <li><a href="#">Tab 3</a></li>
+      ...
+      <li><a href="#">Tab 10</a></li>
+    </ul>
+  </div>
+
+  <div id="content-area">
+    <iframe src="index.html" id="iframe"></iframe>
+  </div>
+
+</div>
+
+</body>
 </html>
