@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chrome Lookalike</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+
+<div id="browser-container">
+
+  <div id="title-bar">
+    <img src="chrome-logo.png" alt="Chrome logo">
+    <input type="text" id="search-bar" placeholder="Search the web or enter a URL">
+    <button id="search-button" type="button"><img src="search-icon.png" alt="Search icon"></button>
+    <button id="theme-button" type="button"><img src="theme-icon.png" alt="Theme icon"></button>
+    <button id="bookmark-button" type="button"><img src="bookmark-icon.png" alt="Bookmark icon"></button>
+  </div>
+
+  <div id="bookmarks-bar">
+    <button id="bookmark-1" type="button"><img src="bookmark-1.png" alt="Bookmark 1"></button>
+    <button id="bookmark-2" type="button"><img src="bookmark-2.png" alt="Bookmark 2"></button>
+    <button id="bookmark-3" type="button"><img src="bookmark-3.png" alt="Bookmark 3"></button>
+    ...
+    <button id="bookmark-10" type="button"><img src="bookmark-10.png" alt="Bookmark 10"></button>
+  </div>
+
+  <div id="tab-bar">
+    <ul>
+      <li class="active"><a href="#">Tab 1</a></li>
+      <li><a href="#">Tab 2</a></li>
+      <li><a href="#">Tab 3</a></li>
+      ...
+      <li><a href="#">Tab 10</a></li>
+    </ul>
+  </div>
+
+  <div id="content-area">
+    <iframe src="index.html" id="iframe"></iframe>
+  </div>
+
+</div>
+
+</body>
+</html>
+Use code with caution. Learn more
+The CSS and JavaScript code for this browser lookalike can be found on GitHub: https://github.com/features/code-search
+
+To use this code, simply replace the index.html file in the iframe element with the HTML file for the page you want to display. You can also change the images used for the theme button and bookmark buttons to match your desired theme.
+
+To add more tabs, simply add more li elements to the ul element in the tab-bar div. You can also add more bookmark buttons to the bookmarks-bar div.
+
+To make the theme button changeable, simply add the following code to the script.js file:
+
+JavaScript
+document.getElementById("theme-button").addEventListener("click", function() {
+  // Change the theme here
+});
+Use code with caution. Learn more
+To make the bookmark button bookmark the current URL, simply add the following code to the script.js file:
+
+JavaScript
+document.getElementById("bookmark-button").addEventListener("click", function() {
+  // Bookmark the current URL here
+});
+Use code with caution. Learn more
+To make the bookmark buttons go to the corresponding URL, simply add the following code to the script.js file:
+
+JavaScript
+for (var i = 1; i <= 10; i++) {
+  document.getElementById("bookmark-" + i).addEventListener("click", function() {
+    // Go to the corresponding URL here
+  });
+}
+Use code with caution. Learn more
+You can customize this code to your liking, and add any additional features you want.
